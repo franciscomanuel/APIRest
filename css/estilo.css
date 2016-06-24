@@ -1,0 +1,112 @@
+body{
+    font-family: Arial;
+}
+
+#contenedor{
+	width: 1300px;
+	margin: auto;	/*Automaticamente hace que se ponga al centro*/	
+}
+
+#DivMenu {
+    height: auto;
+    float: left;
+    text-align: center;
+    margin: 20px auto;  /* para centrar el div */
+}
+
+.desplegable {
+     display: block;   /* para centrar el menú en la pantalla  */
+     width: 200px;
+}
+
+li{
+    list-style: none;
+    
+}
+
+.desplegable li ul li {
+     float: none;  /* para que el menu se despliegue en vertical */
+}
+
+.desplegable li ul {
+     display:none;  /* el desplegable no es visible por defecto */
+}
+
+.desplegable li:hover ul {
+     display:block;  /* al pasar sobre el menu se hace visible  */
+}
+
+.desplegable li a, span{
+    
+    font-weight:bold;
+    text-decoration: none;
+    //background: #00ABFF;
+    color:#FFFFFF;
+    display:block;
+    border-bottom:1px solid #000000;
+    padding:14px 14px;
+    margin:2px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+.desplegable li a:hover, span:hover {
+     background: blue; 
+}
+
+.menu{
+    background: #00ABFF;
+    height: 7px;
+}
+
+#ContenidoDiv{
+    float: left;
+    /*margin-left: 200px;*/
+    padding-left: 70px;
+    width: 800px;
+}
+
+.bloqueSinBordes {
+    margin-left: -3px;
+    border: 0;
+}
+
+.bloqueRedondeado {
+    width: 920px;
+    -moz-boder-radius: 20px;
+    -webkit-boder-radius: 20px;
+    border-radius: 20px;  
+}
+
+.procesaBotones{
+    position: relative; /* podría ser relative */   
+    left: 35%;
+    margin-left: 52px;
+}
+
+.campoErroneo{   
+    border: 1px solid red;
+    filter: alpha(opacity= 25); 
+}
+
+.radioError{
+    color: #ff0000;
+}
+
+.mensajeErroneo{
+    color: #ff0000;
+}
+
+#colorRojo p{
+    color: red;
+}
+
+#insertEmple{
+    margin-left: 40%;
+}
+
+#FldIdEmpleado{
+    display: none;
+}
